@@ -1,0 +1,30 @@
+.container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
